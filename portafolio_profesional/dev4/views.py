@@ -1,5 +1,5 @@
 from django.shortcuts import render
 
-# Create your views here.
 def hoja_de_vida(request):
-    return render(request, "index.html")
+    # Cambiamos "index.html" por "hoja4.html"
+    return render(request, "hoja4.html")
