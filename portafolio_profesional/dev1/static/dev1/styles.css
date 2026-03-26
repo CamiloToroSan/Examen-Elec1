@@ -1,0 +1,120 @@
+/* RESET */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* BODY */
+body {
+    font-family: 'Segoe UI', Arial, sans-serif;
+    background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 40px 20px;
+    min-height: 100vh;
+}
+
+/* TARJETA PRINCIPAL */
+.tarjeta {
+    background: #ffffff;
+    border-radius: 16px;
+    padding: 50px;
+    max-width: 750px;
+    width: 100%;
+    box-shadow: 0 10px 35px rgba(0, 0, 0, 0.25);
+    border: 1px solid rgba(0,0,0,0.05);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* EFECTO HOVER (nivel pro) */
+.tarjeta:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 15px 45px rgba(0, 0, 0, 0.3);
+}
+
+/* ENCABEZADO */
+.encabezado {
+    text-align: center;
+    margin-bottom: 35px;
+    border-bottom: 2px solid #eaeaea;
+    padding-bottom: 20px;
+}
+
+h1 {
+    font-size: 2.3rem;
+    color: #1a1a2e;
+    margin-bottom: 8px;
+}
+
+.perfil {
+    font-size: 1rem;
+    color: #0077b6;
+    font-weight: 500;
+}
+
+/* SECCIONES */
+section {
+    margin-bottom: 28px;
+    padding: 10px 0;
+}
+
+/* TÍTULOS */
+h2 {
+    font-size: 1.1rem;
+    color: #0077b6;
+    margin-bottom: 12px;
+    border-left: 4px solid #0077b6;
+    padding-left: 10px;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+/* TEXTO */
+p {
+    color: #444;
+    line-height: 1.7;
+    margin-bottom: 4px;
+}
+
+/* LINKS */
+a {
+    color: #ffffff;
+    background: #0077b6;
+    padding: 8px 14px;
+    border-radius: 6px;
+    display: inline-block;
+    margin-top: 5px;
+    text-decoration: none;
+    font-size: 0.9rem;
+    transition: background 0.3s ease;
+}
+
+a:hover {
+    background: #023e8a;
+}
+
+/* DETALLE EXTRA (líneas separadoras suaves) */
+section:not(:last-child) {
+    border-bottom: 1px solid #f0f0f0;
+}
+
+/* RESPONSIVE */
+@media (max-width: 600px) {
+    .tarjeta {
+        padding: 25px;
+    }
+
+    h1 {
+        font-size: 1.6rem;
+    }
+
+    h2 {
+        font-size: 1rem;
+    }
+
+    body {
+        padding: 20px 10px;
+    }
+}

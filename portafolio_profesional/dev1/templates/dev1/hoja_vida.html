@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hoja de Vida - Dev 1</title>
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'dev1/styles.css' %}">
+</head>
+<body>
+    <div class="tarjeta">
+        <header class="encabezado">
+            <h1>Camilo Alejandro Toro</h1>
+            <p class="perfil">Desarrollador Web | Python & Django</p>
+        </header>
+
+        <section>
+            <h2>Datos Personales</h2>
+            <p>Email: camilotoro0521@gmail.com</p>
+            <p>Ciudad: Pasto, Nariño</p>
+            <p>Teléfono: +57 000 000 0000</p>
+        </section>
+
+        <section>
+            <h2>Perfil Profesional</h2>
+            <p>Estudiante de Ingeniería de Sistemas con enfoque en desarrollo web. Experiencia en Python, Django, HTML y CSS.</p>
+        </section>
+
+        <section>
+            <h2>Formación Académica</h2>
+            <p>Ingeniería de Sofware — Universidad — 2026</p>
+        </section>
+
+        <section>
+            <h2>Repositorios</h2>
+            <a href="https://github.com/CamiloToroSan" target="_blank">
+                GitHub → github.com/CamiloToroSan
+            </a>
+        </section>
+    </div>
+</body>
+</html>
