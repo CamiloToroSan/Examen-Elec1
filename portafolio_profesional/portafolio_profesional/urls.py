@@ -21,4 +21,10 @@ from django.urls import path,include
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('dev3', include("dev3.urls")), 
+from django.urls import include, path
+
+urlpatterns = [
+    path('admin/', admin.site.urls),
+    path('dev2/', include('dev2.urls')),
+    
 ]
